@@ -1,0 +1,13 @@
+@import './css/header.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    padding: 30px 80px;
+    margin: auto;
+    max-width: 100%;
+}
