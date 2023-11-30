@@ -1,16 +1,18 @@
+
+import LogoImg from '../img/logo.png'
+
 export default function createHeader () {
     const content = document.querySelector("header")
 
     content.appendChild(createLogo())
     content.appendChild(createBrandName())
     content.appendChild(createNavbar())
-
-    return content
 }
 
 function createLogo() {
-    const logo = document.createElement("p")
-    logo.textContent = "My Logo"
+    const logo = document.createElement("img")
+    logo.classList.add("logo")
+    logo.src = LogoImg
 
     return logo
 }
@@ -56,7 +58,13 @@ function createNavbar () {
 
 function createBrandName() {
     const brandName = document.createElement("div")
+    brandName.classList.add("brand")
     brandName.textContent = "Ichiraku Ramen"
 
     return brandName
+}
+
+export function getHeaderHeight() {
+    const header = document.querySelector("header")
+    return header.offsetHeight;
 }

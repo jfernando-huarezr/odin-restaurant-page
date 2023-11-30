@@ -1,4 +1,6 @@
 @import './css/header.scss';
+@import './css/main.scss';
+@import './css/footer.scss';
 
 *{
     margin: 0;
@@ -6,8 +8,8 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 30px 80px;
-    margin: auto;
-    max-width: 100%;
+
+
+.spacer {
+    padding-top: 20px;
 }
