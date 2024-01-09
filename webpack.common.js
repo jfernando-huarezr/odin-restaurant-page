@@ -3,20 +3,24 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: './src/main.js',
+  },
   output: {
-    filename: 'main.js',
+    filename: '[name].js',
     path: path.resolve(__dirname, 'dist'),
     clean: true
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-            filename: 'index.html',
-            title: 'Restaurant Page',
-            inject: 'body'
+      filename: 'index.html',
+      title: 'Restaurant Page',
+      inject: 'body'
     }),
   ],
+
   module: {
     rules: [
       {

@@ -1,4 +1,8 @@
+import renderHome from './mainHome'
+import renderContact from './mainContact'
+import renderMenu from './mainMenu'
 
+import '../css/header.scss'
 import LogoImg from '../img/logo.png'
 
 export default function createHeader () {
@@ -10,14 +14,19 @@ export default function createHeader () {
 }
 
 function createLogo() {
+    const container = document.createElement('div')
     const logo = document.createElement("img")
     logo.classList.add("logo")
     logo.src = LogoImg
 
-    return logo
+    container.appendChild(logo)
+
+    return container
 }
 
 function createNavbar () {
+    const container = document.createElement('div')
+    container.classList.add('navbar-container')
     const navbar = document.createElement("ul")
 
     for(let i = 0; i < 3; i++) {
@@ -27,6 +36,7 @@ function createNavbar () {
                 button.textContent = "Home"
                 button.addEventListener('click', () => {
                     console.log("home was clicked")
+                    renderHome()
                 })
 
                 navbar.appendChild(button)
@@ -36,6 +46,7 @@ function createNavbar () {
                 button.textContent = "Menu"
                 button.addEventListener('click', () => {
                     console.log("Menu was clicked")
+                    renderMenu()
                 })
 
                 navbar.appendChild(button)
@@ -45,6 +56,7 @@ function createNavbar () {
                 button.textContent = "Contact"
                 button.addEventListener('click', () => {
                     console.log("contact was clicked")
+                    renderContact()
                 })
 
                 navbar.appendChild(button)
@@ -52,8 +64,10 @@ function createNavbar () {
             }
         }
     }
+
+    container.appendChild(navbar)
     
-    return navbar
+    return container
 }
 
 function createBrandName() {

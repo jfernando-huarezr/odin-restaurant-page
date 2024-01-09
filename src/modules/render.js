@@ -1,2 +1,5 @@
-const content = document.querySelector('#content')
-content.innerHTML = ""
+export default function render() {
+    const content = document.querySelector('main')
+    content.innerHTML = ""
+}
+

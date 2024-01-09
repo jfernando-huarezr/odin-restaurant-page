@@ -1,3 +1,5 @@
+import '../css/footer.scss'
+
 export default function createFooter () {
     const footer = document.querySelector("footer")
     footer.appendChild(createMap())
@@ -7,19 +9,19 @@ export default function createFooter () {
 
 function createMap() {
     const map = document.createElement("div")
-    map.textContent = "Mapita"
+    map.textContent = "Sasuke"
     return map
 }
 
 function createForm() {
     const form = document.createElement("form")
-    form.textContent = "formulario"
+    form.textContent = "Naruto"
     return form
 }
 
 function createLinkMenu() {
     const menu = document.createElement("menu")
-    menu.textContent = "Menucito"
+    menu.textContent = "Sakura"
     return menu
 }
 
