@@ -1,5 +1,8 @@
 main {
     background-image: url("../img/konoha.jpg");
+    font-family: 'narutofont', sans-serif;
+    word-spacing: 10px;
+    line-height: 1.7;
 
     .container {
         display: flex;
@@ -13,12 +16,40 @@ main {
         }
 
         .content {
-            font-family: 'narutofont', sans-serif;
+            
             background-color: rgba(255, 228, 196, 0.5);
             padding: 10px;
             width: 50%;
-            word-spacing: 10px;
-            line-height: 1.7;
+
         }  
+    }
+
+    .menu {
+
+        padding: 15px 15px;        
+        display: grid;
+        align-items: center;
+        gap: 15px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+        .dish {
+          margin: auto;
+          background-color: rgba(234, 230, 231, 0.7);
+          min-width: 300px;
+          height: 480px;
+          padding: 30px;
+          border: 1px solid black;
+          border-radius: 10px;
+
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 18px;
+
+
+          img {
+            width: 250px;
+          }
+        }
     }
 }
