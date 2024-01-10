@@ -1,4 +1,8 @@
 import render from "./render";
+import shoyu from '../img/shoyu.jpeg'
+import miso from '../img/miso.jpeg'
+import tonkotsu from '../img/tonkotsu.jpeg'
+import shio from '../img/shio.jpeg'
 
 export default function renderMenu() {
 
@@ -6,25 +10,25 @@ export default function renderMenu() {
       {
         name: 'Shoyu Ramen',
         description: 'Shoyu, or soy sauce, ramen uses soy sauce as its main seasoning.',
-        pictureUrl: '../img/shoyu.jpeg',
+        pictureUrl: shoyu,
       },
 
       {
         name: 'Miso Ramen',
         description: 'Miso ramen is based on miso. This creates a thick, rich, and deep umami flavor in the broth. Miso ramen is often based on chicken stock.',
-        pictureUrl: '../img/miso.jpeg'
+        pictureUrl: miso
       },
 
       {
         name: 'Tonkotsu Ramen',
         description: 'Tonkotsu ramen is one of the most popular and well-known styles of ramen nowadays. The name refers to pork bones, the basis of the stock and the predominant flavor.',
-        pictureUrl: '../img/tonkotsu.jpeg'
+        pictureUrl: tonkotsu
       },
 
       {
         name: 'Shio Ramen',
         description: 'Shio ramen is the oldest and perhaps simplest style of ramen broth, with mainly salt seasoning.',
-        pictureUrl: '../img/shio.jpeg'   
+        pictureUrl: shio   
       }
     ]
 
